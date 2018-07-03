@@ -1,5 +1,5 @@
 FROM node:7.10.1 as source
-WORKDIR /src/Coeus-Radar01
+WORKDIR /src/coeus-radar01
 COPY package.json ./
 RUN npm install
 COPY . ./
