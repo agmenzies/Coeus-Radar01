@@ -5,7 +5,7 @@ RUN npm install
 COPY . ./
 RUN npm run build
 
-FROM nginx:1.13.5
+FROM nginx:1.14.0
 WORKDIR /opt/coeus-radar01
 COPY --from=source /src/coeus-radar01/dist .
 COPY default.template /etc/nginx/conf.d/default.conf
