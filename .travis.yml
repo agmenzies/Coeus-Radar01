@@ -14,7 +14,7 @@ jobs:
         skip_cleanup: true
         local_dir: dist
         on:
-          repo: thoughtworks/build-your-own-radar
+          repo: agmenzies/Coeus-Radar01
           condition: "$TRAVIS_PULL_REQUEST = false"
     - stage: Invalidate CDN
       install: pip install --user awscli && export PATH=$PATH:$HOME/.local/bin
