@@ -6,7 +6,7 @@ COPY . ./
 RUN npm run build
 
 FROM nginx:1.14.0
-WORKDIR /opt/coeus-radar01
+WORKDIR /opt/build-your-own-radar
 COPY --from=source /src/coeus-radar01/dist .
 COPY default.template /etc/nginx/conf.d/default.conf
 CMD ["nginx", "-g", "daemon off;"]
