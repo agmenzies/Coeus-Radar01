@@ -5,7 +5,7 @@ A library that generates an interactive radar, inspired by [thoughtworks.com/rad
 [![Coeus Logo](https://www.coeusconsulting.co.uk/wp-content/themes/vantage-child/images/coeus-consulting.svg)](https://www.coeusconsulting.co.uk)
 ## Demo
 
-You can see this in action at https://radar.thoughtworks.com. If you plug in [this data](https://docs.google.com/spreadsheets/d/1YXkrgV7Y6zShiPeyw4Y5_19QOfu5I6CyH5sGnbkEyiI/) you'll see [this visualization](https://radar.thoughtworks.com/?sheetId=1YXkrgV7Y6zShiPeyw4Y5_19QOfu5I6CyH5sGnbkEyiI). 
+You can see this in action at https://radar.thoughtworks.com. If you plug in [this data](https://docs.google.com/spreadsheets/d/1uu--borlaKFlfEe9pm-KhmCDOj9vIhTUXYNSoYoCNuk) you'll see [this visualization](https://docs.google.com/spreadsheets/d/1uu--borlaKFlfEe9pm-KhmCDOj9vIhTUXYNSoYoCNuk). 
 
 ## How To Use
 
@@ -30,7 +30,7 @@ Create a Google Sheet. Give it at least the below column headers, and put in the
 * Close the 'Publish to the web' dialog.
 * Copy the URL of your editable sheet from the browser (Don't worry, this does not share the editable version). 
 
-The URL will be similar to [https://docs.google.com/spreadsheets/d/1waDG0_W3-yNiAaUfxcZhTKvl7AUCgXwQw8mdPjCz86U/edit](https://docs.google.com/spreadsheets/d/1waDG0_W3-yNiAaUfxcZhTKvl7AUCgXwQw8mdPjCz86U/edit). In theory we are only interested in the part between '/d/' and '/edit' but you can use the whole URL if you want.
+The URL will be similar to [https://docs.google.com/spreadsheets/d/1uu--borlaKFlfEe9pm-KhmCDOj9vIhTUXYNSoYoCNuk/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1uu--borlaKFlfEe9pm-KhmCDOj9vIhTUXYNSoYoCNuk/edit?usp=sharing). In theory we are only interested in the part between '/d/' and '/edit' but you can use the whole URL if you want.
 
 ### Using CSV data
 The other way to provide your data is using CSV document format.
@@ -63,12 +63,19 @@ The app uses [Tabletop.js](https://github.com/jsoma/tabletop) to fetch the data 
 
 The application uses [webpack](https://webpack.github.io/) to package dependencies and minify all .js and .scss files.
 
-## Docker Image
+## Docker Image - Thougtworks
 We have released BYOR as a docker image for our users. The image is available in our [DockerHub Repo](https://hub.docker.com/r/wwwthoughtworks/build-your-own-radar/). To pull and run the image, run the following commands.
-
 ```
 $ docker pull wwwthoughtworks/build-your-own-radar
 $ docker run --rm -p 8080:80 -e SERVER_NAMES="localhost 127.0.0.1" wwwthoughtworks/build-your-own-radar
+$ open http://localhost:8080
+```
+## Docker Image - Custom for Coeus
+We have released BYOR as a docker image for our users. The image is available in our [DockerHub Repo](https://hub.docker.com/r/agmenzies/radar01). To pull and run the image, run the following commands.
+
+```
+$ docker pull agmenzies/radar01
+$ docker run --rm -p 8080:80 -e SERVER_NAMES="localhost 127.0.0.1" agmenzies/radar01
 $ open http://localhost:8080
 ```
 
