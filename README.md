@@ -40,6 +40,7 @@ name,ring,quadrant,isNew,description
 Composer,adopt,tools,TRUE,"Although the idea of dependency management ..."  
 Canary builds,trial,techniques,FALSE,"Many projects have external code dependencies ..."  
 Apache Kylin,assess,platforms,TRUE,"Apache Kylin is an open source analytics solution ..."  
+
 JSF,hold,languages & frameworks,FALSE,"We continue to see teams run into trouble using JSF ..."  
 ```
 
@@ -69,6 +70,8 @@ $ docker run --rm -p 8080:80 -e SERVER_NAMES="localhost 127.0.0.1" wwwthoughtwor
 $ open http://localhost:8080
 ```
 ## Configuring Ubuntu, run docker and launch Radar 
+Use the commands once you have a running Ubuntu VM up and running
+```
 $ sudo apt-get remove docker docker-engine docker.io
 $ sudo apt-get update
 $ sudo apt-get install \
@@ -87,7 +90,7 @@ $ sudo apt-get update
 $ sudo apt-get install docker-ce
 $ sudo docker pull agmenzies/coeus-radar01
 $ sudo docker run --rm -p 8080:80 -e SERVER_NAMES="localhost 127.0.0.1" agmenzies/coeus-radar01
-
+```
 ## Docker Image - Custom for Coeus
 We have released BYOR as a docker image for our users. The image is available in our [DockerHub Repo](https://hub.docker.com/r/agmenzies/coeus-radar01). To pull and run the image, run the following commands.
 
