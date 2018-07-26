@@ -1,4 +1,4 @@
-FROM node:10.7.0 as source
+FROM node:7.10.1 as source
 WORKDIR /src/Coeus-Radar01
 COPY package.json ./
 RUN npm install
