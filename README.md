@@ -1,6 +1,9 @@
+```
+commented out as travis / jenkins disabled to protect AWS keys
 [![Build Status](https://travis-ci.org/agmenzies/Coeus-Radar01.svg?branch=master)](https://travis-ci.org/agmenzies/Coeus-Radar01)
-
+```
 [![Coeus Logo](https://www.coeusconsulting.co.uk/wp-content/themes/vantage-child/images/coeus-consulting.svg)](https://www.coeusconsulting.co.uk)
+
 ## Demo
 
 You can see this in action at https://radar.thoughtworks.com. If you plug in [this data](https://docs.google.com/spreadsheets/d/1uu--borlaKFlfEe9pm-KhmCDOj9vIhTUXYNSoYoCNuk) you'll see [this visualization](https://docs.google.com/spreadsheets/d/1uu--borlaKFlfEe9pm-KhmCDOj9vIhTUXYNSoYoCNuk). 
@@ -75,8 +78,8 @@ $ open http://localhost:8080
 
 ## Configuring Ubuntu, run docker and launch Radar 
 Use the commands once you have a running Ubuntu VM up and running
-
 ```
+
 $ sudo apt-get remove docker docker-engine docker.io
 $ sudo apt-get update
 $ sudo apt-get install \
