@@ -1,5 +1,5 @@
-```
 commented out as travis / jenkins disabled to protect AWS keys
+```
 [![Build Status](https://travis-ci.org/agmenzies/Coeus-Radar01.svg?branch=master)](https://travis-ci.org/agmenzies/Coeus-Radar01)
 ```
 [![Coeus Logo](https://www.coeusconsulting.co.uk/wp-content/themes/vantage-child/images/coeus-consulting.svg)](https://www.coeusconsulting.co.uk)
