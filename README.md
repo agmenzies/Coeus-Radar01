@@ -2,10 +2,6 @@
 [![Coeus Logo](https://www.coeusconsulting.co.uk/wp-content/themes/vantage-child/images/coeus-consulting.svg)](https://www.coeusconsulting.co.uk)
 [![Build Status](https://travis-ci.org/agmenzies/Coeus-Radar01.svg?branch=master)](https://travis-ci.org/agmenzies/Coeus-Radar01)
 
-## Demo
-
-You can see this in action at https://radar.thoughtworks.com. If you plug in [this data](https://docs.google.com/spreadsheets/d/1uu--borlaKFlfEe9pm-KhmCDOj9vIhTUXYNSoYoCNuk) you'll see [this visualization](https://docs.google.com/spreadsheets/d/1uu--borlaKFlfEe9pm-KhmCDOj9vIhTUXYNSoYoCNuk). 
-
 ## How To Use
 
 The easiest way to use the app out of the box is to provide a *public* Google Sheet ID from which all the data will be fetched. You can enter that ID into the input field on the first page of the application, and your radar will be generated. The data must conform to the format below for the radar to be generated correctly.
@@ -126,3 +122,8 @@ Make sure you have nodejs installed.
      $ docker run -p 8080:8080 -v $PWD:/app -w /app -it node:7.3.0 /bin/sh -c 'npm install && npm run dev'
 
 After building it will start on localhost:8080
+
+## Demo
+
+You can see this in action at https://radar.thoughtworks.com. If you plug in [this data](https://docs.google.com/spreadsheets/d/1uu--borlaKFlfEe9pm-KhmCDOj9vIhTUXYNSoYoCNuk) you'll see [this visualization](https://docs.google.com/spreadsheets/d/1uu--borlaKFlfEe9pm-KhmCDOj9vIhTUXYNSoYoCNuk). 
+
