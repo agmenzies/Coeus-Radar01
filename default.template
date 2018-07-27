@@ -2,14 +2,14 @@
 server {
   listen 80;
   location / {
-    root /opt/Coeus-Radar01;
+    root /opt/coeus-radar01;
     index index.html;
   }
 
   # custom error page for 404 errors
   error_page 404 /error.html;
   location = /error.html {
-    root /opt/Coeus-Radar01;
+    root /opt/coeus-radar01;
   }
 
   # nginx default error page for 50x errors
