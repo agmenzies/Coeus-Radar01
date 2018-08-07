@@ -170,17 +170,29 @@ body {
       }
 
       path {
-        &.ring-arc-3 {
+        &.ring-arc-6 {
+          stroke: none;
+          fill: $grey-lightest;
+        }
+        &.ring-arc-5 {
+          stroke: none;
+          fill: $grey-even-darker;
+        }
+        &.ring-arc-4 {
           stroke: none;
           fill: $grey-light;
         }
-        &.ring-arc-2 {
+        &.ring-arc-3 {
           stroke: none;
           fill: $grey;
         }
-        &.ring-arc-1 {
+        &.ring-arc-2 {
           stroke: none;
           fill: $grey-dark;
+        }
+        &.ring-arc-1 {
+          stroke: none;
+          fill: $grey-darker;
         }
         &.ring-arc-0 {
           stroke: none;
