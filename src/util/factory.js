@@ -25,7 +25,7 @@ const plotRadar = function (title, blips) {
 
     var rings = _.map(_.uniqBy(blips, 'ring'), 'ring');
     var ringMap = {};
-    var maxRings = 6;
+    var maxRings = 7;
 
     _.each(rings, function (ringName, i) {
         if (i == maxRings) {
